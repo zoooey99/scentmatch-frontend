@@ -35,7 +35,7 @@ const Index = () => {
           </p>
           <Link
             to="/quiz"
-            className="inline-block bg-lavender-100 hover:bg-lavender-200 text-gray-800 font-medium px-8 py-3 rounded-full transition-all transform hover:scale-105 animate-slide-up"
+            className="inline-block bg-lavender-100 hover:bg-lavender-200 text-gray-800 font-medium px-8 py-3 rounded-full transition-all transform hover:scale-105 animate-slide-up shadow-md hover:shadow-lg"
           >
             Get Started
           </Link>
