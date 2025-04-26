@@ -1,6 +1,10 @@
 # Scentmatch
 
-## Project info
+![Homepage Screenshot](./public/ss1.png)
+![Intake Form Screenshot](./public/ss2.png)
+![Recommendation Screenshot](./public/ss3.png)
+
+## Demo Link
 
 **URL**: https://scentmatch-dreamscape-frontend.lovable.app/
 
