@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# Scentmatch
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/8ac46c9e-0a7b-444c-b4e1-aad4cdfc89bd
+**URL**: https://scentmatch-dreamscape-frontend.lovable.app/
 
-## How can I edit this code?
+## Project Idea
 
-There are several ways of editing your application.
+Use recent advances in language modeling to create an **interactive database for all scents** (both perfumes and colognes), enabling users to:
 
-**Use Lovable**
+- Discover likeable scents based on their fragrance note profile.
+- Find scents they love without months or years of trial and error.
+- Personalize fragrance discovery the same way Netflix personalizes shows.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8ac46c9e-0a7b-444c-b4e1-aad4cdfc89bd) and start prompting.
+## Target Audience
 
-Changes made via Lovable will be committed automatically to this repo.
+- Anyone looking to explore new fragrances.
+- Users who want tailored scent recommendations based on their preferences, without wasting time or money.
 
-**Use your preferred IDE**
+## The Problem
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- The fragrance market is oversaturated, making it hard to choose a scent.
+- Perfumes and colognes are expensive investments, often requiring trial and error.
+- Finding the perfect scent through traditional methods is time-consuming and costly.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Key Features
 
-Follow these steps:
+- User profile embedding via BERT models
+- Real-time recommendations (≤ 200ms)
+- Scalable to 1000 queries/second
+- Secure user data (256-bit encryption, GDPR/CCPA compliant)
+- Subscription-based scent delivery
+- Feedback-driven model refinement
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## System Architecture
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Frontend:** Next.js, React Native
+- **Backend:** FastAPI
+- **ML Framework:** PyTorch + Hugging Face Transformers
+- **Databases:** PostgreSQL + pgvector
+- **Infrastructure:** Kubernetes, Celery + Redis, Stripe SDK, Amazon API integration
+- **Monitoring:** Prometheus + Grafana
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Architecture Style:** Multi-tier Microservices  
+**Design Patterns Used:** Repository, Strategy, Observer, Factory, Adapter, Circuit Breaker
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Workflows
 
-**Edit a file directly in GitHub**
+- **User Registration:** Collect preferences → Embed with BERT → Save profile
+- **Recommendation:** Retrieve embedding → Find nearest fragrances → Apply business rules → Recommend
+- **Feedback Collection:** Collect ratings → Update user embedding
+- **Subscription Cycle:** Monthly recommendations + feedback loop
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Team Members
 
-**Use GitHub Codespaces**
+| Name           | Role                    |
+|----------------|--------------------------|
+| Zoey Lee       | Front End Engineer        |
+| Cole Foster    | Machine Learning Engineer |
+| Anthony Givans | Machine Learning Engineer |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Why ScentMatch?
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8ac46c9e-0a7b-444c-b4e1-aad4cdfc89bd) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- $7.7B+ fragrance market opportunity
+- Pain point: finding the right scent takes months and $$$
+- Our solution: fast, accurate, enjoyable scent discovery
